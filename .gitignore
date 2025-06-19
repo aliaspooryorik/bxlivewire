@@ -1,17 +1,28 @@
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-# https://github.com/takari/maven-wrapper#usage-without-binary-jar
-.mvn/wrapper/maven-wrapper.jar
+# General Ignores + IDE
+.DS_Store
+settings.xml
+WEB-INF
 
-# Eclipse m2e generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
+# Engines + Database + CBFS + Secrets
+.tmp/**
+.env
+.engine/**
+.cbfs/**
+docker/.db/**
+grapher/**
+
+# logs + tests
+logs/**
+tests/results/**
+
+# npm
+**/node_modules/*
+npm-debug.log
+yarn-error.log
+
+## Ignored Dependencies
+effective-pom.xml
+/coldbox/**
+/testbox/**
+/modules/**
+/lib/java/**
